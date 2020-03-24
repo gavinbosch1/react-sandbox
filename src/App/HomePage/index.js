@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAppContext } from '@/contexts/App';
 import HomePageContext from '@/contexts/HomePage';
+import { useTextfieldContext } from '@/contexts/TextfieldPage';
 import List from './List';
 
 const HomePage = () => {
@@ -39,6 +40,7 @@ const HomePage = () => {
 			<HomePageContext.Provider value={list}>
 				<List />
 			</HomePageContext.Provider>
+
 		</>
 	);
 };

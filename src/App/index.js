@@ -13,8 +13,8 @@ const HomePage = LazyComponent(() => import('./HomePage'), loadPageOpts);
 const PostsPage = LazyComponent(() => import('./PostsPage'), loadPageOpts);
 const SinglePostPage = LazyComponent(() => import('./SinglePostPage'), loadPageOpts);
 const FourZeroFourPage = LazyComponent(() => import('./FourZeroFourPage'), loadPageOpts);
-const SignInPage = LazyComponent(() => import('./AuthPages/SignInPage'), loadPageOpts);
-const SignUpPage = LazyComponent(() => import('./AuthPages/SignUpPage'), loadPageOpts);
+const SignInPage = LazyComponent(() => import('./Authentication/SignInPage'), loadPageOpts);
+const SignUpPage = LazyComponent(() => import('./Authentication/SignUpPage'), loadPageOpts);
 
 const App = () => {
 	const [appInitialised, setAppInitStatus] = useState(false);
